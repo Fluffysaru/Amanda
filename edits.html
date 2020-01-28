@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Edits</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+
+<header>  
+<article class= "box"> 
+
+  mylogo/my name
+ 
+
+
+</article>
+<br><br>
+
+
+</header>
+
+<nav> 
+<ul><li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Me</a></li>
+<li><a  href="illustrations.html">Illustrations</a></li>
+<li><a style = "background-color:#2a4d69" href="edits.html">Edits</a></li>
+<li><a href="videos.html">Videos</a></li>
+<li><a href="others.html">Others</a></li>
+<li><a href="contact.html">Contact Me </a></li></ul>
+</nav>
+
+
+<br>
+<section>
+
+<article style= "height:700px;">
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+
+  <img class="slide" src="images/slideshow.jpg" >
+
+</div>
+
+<div  class="mySlides fade">
+
+  <img class="slide" src="images/slideshow2.jpg">
+  
+</div>
+
+<div class="mySlides fade">
+ 
+  <img class="slide" src="images/slideshow.jpg" >
+
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+
+</br><br/>
+
+</article>
+
+</section>
+
+
+
+<footer>
+<hr>
+<a href="index.html">Home</a>| <a href="about.html">About Me</a> | <a href="illustrations.html">Illustrations</a>|<a href="edits.html">Edits</a>|<a href="videos.html">Videos</a>|<a href="others.html">Others</a>| <a href="contact.html">Contact Me</a>
+<br>
+<h3 style="text-align:center;">&copy;Amanda Wong Limin</h3>
+
+    
+</footer>
+</body>
+</html>
+
+
